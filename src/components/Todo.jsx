@@ -1,39 +1,9 @@
 import "./Todo.css";
 
-import React from "react";
+import { Button } from "react-bootstrap"
 
-
-export default function Todo({ todo, toggleComplete, deleteTodo }) {
+export default function Todo({ todo }) {
   return (
-    <li className={todo.completed ? "completed" : ""}>
-    <span>{todo.text}</span>
-    <button className="complete-btn" onClick={() => toggleComplete(todo.id)}>
-        {todo.completed ? "Undo" : "Complete"}
-    </button>
-        <button className="delete-btn" onClick={() => deleteTodo(todo.id)}>
-            Delete
-        </button>
-    </li>
-  );
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*  return (
     <div className="todo">
       <p className={todo.completed ? "todo-title-completed " : ""}>
         {todo?.title}
@@ -46,4 +16,4 @@ export default function Todo({ todo, toggleComplete, deleteTodo }) {
       </div>
     </div>
   );
-} */
+}

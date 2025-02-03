@@ -1,38 +1,9 @@
-//import { ListGroup } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 import Todo from "./Todo";
-import React from "react";
-
-export default function TodoList({ todos, toggleComplete, deleteTodo }) {
-  return (
-      <ul>
-          {todos.length > 0 ? (
-              todos.map(todo => (
-                <Todo key={todo.id} todo={todo} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
-              ))
-          ) : (
-              <p>No tasks needed.</p>
-          )}
-      </ul>
-  );
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*  console.log(todos);
+export default function TodoList({ todos }) {
+  console.log(todos);
 
   return (
     <ListGroup>
@@ -43,4 +14,4 @@ export default function TodoList({ todos, toggleComplete, deleteTodo }) {
       ))}
     </ListGroup>
   );
-} */
+}

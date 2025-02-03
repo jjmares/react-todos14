@@ -10,12 +10,12 @@
 }
 
 .btn-group {
-  width: 100px;
+  width: 210px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 button {
-  width: 25%;
+  width: 100%;
 }
